@@ -1,0 +1,162 @@
+/* Reset de margens e paddings para evitar espaços indesejados */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilizando o corpo do documento*/
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: rgb(250, 252, 246);
+    padding: 10px;
+}
+
+/*XXXX CABEÇALHO */
+.cabecalho {
+    background-color: rgb(204, 212, 187);
+    color: darkolivegreen;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+    border-radius: 5px;
+}
+
+.cabecalho-imagem {
+    width: 15%;
+    border-radius: 5px;
+}
+
+.cabecalho-lista-item {
+    display: inline-block;
+    margin: 0 15px;
+    font-size: 16px;
+}
+
+.cabecalho a {
+    text-decoration: none;
+    color: white;
+    font-family: Calibri;
+    font-size: 24px;
+    color: darkolivegreen;
+}
+/*-----------------------*/
+
+
+/*Seção de Descrição*/
+.descricao {
+    text-align: center;
+    margin-bottom: 2em;
+    margin-top: 2em;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    /* 2px desloc. horiz, 2px vertical, 5px raio de desfoque,
+     cor preta com 30% de opacidade */
+}
+/*-----------------------*/
+
+
+/* Estilizando a seção principal */
+.secao {
+    max-width: 1200px;
+    /* Largura máxima da seção */
+    margin: 0 auto;
+    /* Centraliza a seção na página */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    /* Sombra suave para destacar a seção */
+    border-radius: 5px;
+
+    display: flex;
+    /*flexbox para organizar os itens lado a lado */
+
+    background-color: #fff;
+    padding: 10px;
+    margin-bottom: 2em;
+}
+
+.texto {
+    flex: 1;
+    /* Ocupa o espaço restante */
+    padding-right: 20px;
+    /* Espaçamento à direita para separar da imagem */
+    align-self: center;
+    padding-left: 2em;
+}
+
+.texto h2 {
+    line-height: 2em;
+    margin-bottom: 2em;
+    text-align: center;
+}
+
+.texto p {
+    line-height: 2em;
+    margin-top: 1em;
+}
+
+.imagem {
+    flex: 1;
+    /* Ocupa o espaço restante */
+    text-align: center;
+    /* Centraliza a imagem horizontalmente */
+}
+
+.imagem img {
+    max-width: 100%;
+    /* Garante que a imagem não ultrapasse seu contêiner */
+    height: auto;
+    /* Mantém a proporção da imagem */
+    border-radius: 8px;
+    /* Borda arredondada para a imagem */
+}
+
+footer {
+    color: rgb(75, 96, 40);
+    text-align: center;
+    height: 5em;
+    background-color:rgb(204, 212, 187);
+    /* alinha paragrafo verticalmente */
+    display: flex;
+    justify-content: center; /* Alinha horizontalmente */
+    align-items: center;  
+}
+
+footer p{
+    line-height: 1.0;
+}
+
+/* Media query para tornar a seção responsiva */
+@media (max-width: 800px) {
+
+    body {
+        font-family: Arial, sans-serif;
+        line-height: 1.5;
+        background-color: rgb(250, 252, 246);
+        padding: 3px;
+        font-size: 10px;
+    }
+
+    .secao {
+        flex-direction: column;
+        /* Empilha os itens verticalmente em telas menores */
+    }
+
+    .texto,
+    .imagem {
+        padding: 10px;
+        /* Espaçamento interno menor para telas menores */
+    }
+
+    .cabecalho {
+        display: block;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .cabecalho-imagem {
+        width: 50%;
+        margin: auto;
+        display: block;
+        border-radius: 2px;
+    }
+}
