@@ -125,6 +125,24 @@ footer p{
     line-height: 1.0;
 }
 
+/*java script estilização*/
+
+.boasvindas{
+    text-align: center;
+}
+
+#nome-usuário{
+    font-weight: bold;
+}
+
+.texto-inglês{
+    font-style: italic;
+}
+
+
+
+
+
 /* Media query para tornar a seção responsiva */
 @media (max-width: 800px) {
 
