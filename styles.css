@@ -133,8 +133,8 @@ footer p{
 }
 
 #nome-usuário{
-    font-style: italic;
-    font-size: 15px;
+    font-weight: bold;    
+    font-size: 14px;
 }
 
 .texto-inglês{
